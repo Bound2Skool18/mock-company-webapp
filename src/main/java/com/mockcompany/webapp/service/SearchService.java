@@ -28,8 +28,7 @@ public class SearchService {
          *   2. query string is treated as case-insensitive meaning Hi will match hi, hI, Hi, or HI
          *   3. If the query is wrapped in quotes, only EXACT matches of name/description will be returned
          */
-        Iterable<ProductItem> allItems = this.productItemRepository.findAll();
-        List<ProductItem> itemList = new ArrayList<>();
+        return Collections.emptyList();
 
         /*
          * 1. Check for quotes in the query string. We should use a regex for this but for simplicity
